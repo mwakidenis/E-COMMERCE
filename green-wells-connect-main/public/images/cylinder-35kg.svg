@@ -1,0 +1,26 @@
+<svg width="160" height="220" viewBox="0 0 160 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cylinder body -->
+  <rect x="30" y="40" width="100" height="160" rx="12" fill="#f97316" stroke="#ea580c" stroke-width="2"/>
+  
+  <!-- Top handle -->
+  <ellipse cx="80" cy="30" rx="22" ry="10" fill="#ea580c" stroke="#c2410c" stroke-width="2"/>
+  <rect x="58" y="30" width="44" height="10" fill="#ea580c"/>
+  
+  <!-- Label -->
+  <rect x="45" y="90" width="70" height="60" rx="5" fill="white" opacity="0.9"/>
+  <text x="80" y="118" text-anchor="middle" font-size="20" font-weight="bold" fill="#ea580c">35KG</text>
+  <text x="80" y="138" text-anchor="middle" font-size="12" fill="#ea580c">INDUSTRIAL</text>
+  
+  <!-- Valve indicator -->
+  <circle cx="80" cy="25" r="6" fill="#dc2626"/>
+  
+  <!-- Bottom base -->
+  <ellipse cx="80" cy="200" rx="35" ry="12" fill="#c2410c" stroke="#9a3412" stroke-width="2"/>
+  
+  <!-- Shine effect -->
+  <rect x="45" y="60" width="12" height="120" rx="6" fill="white" opacity="0.2"/>
+  
+  <!-- Warning stripes -->
+  <rect x="115" y="100" width="10" height="20" fill="#fef3c7"/>
+  <rect x="115" y="125" width="10" height="20" fill="#fef3c7"/>
+</svg>

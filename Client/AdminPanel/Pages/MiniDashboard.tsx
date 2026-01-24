@@ -56,7 +56,7 @@ const MiniDashboard = () => {
                 />
                 <p className="text-md text-white font-semibold capitalize ">
                   <span>{product.name}</span>-{" "}
-                  <span className="text-gray-400 text-sm">$ {product.price}</span>
+                  <span className="text-gray-400 text-sm">KSh {product.price}</span>
                 </p>
                 <div className="flex">
                   <button

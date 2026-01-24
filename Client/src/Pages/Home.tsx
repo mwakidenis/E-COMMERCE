@@ -50,7 +50,7 @@ const filteredItems = products.filter(product =>
               className="h-50 rounded w-50 object-cover"
             />
             <p className="text-lg text-white font-semibold capitalize ">{product.name}</p>
-            <span className="text-lg text-amber-300 font-bold mb-1.5">$ {product.price}</span> <br />
+            <span className="text-lg text-amber-300 font-bold mb-1.5">KSh {product.price}</span> <br />
             <button
               className="bg-[#14144d] p-2 px-2 w-full text-white font-bold cursor-pointer hover:bg-fuchsia-600 transition-colors duration-500"
               onClick={() => {

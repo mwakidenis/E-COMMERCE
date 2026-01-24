@@ -2,8 +2,13 @@ const Product = require('../Models/Product.models')
 
 const getProducts = async (request, response) => {
         try {
-        const product = await Product.find({})
-        response.status(200).json(product)
+        const products = await Product.find({})
+        const convertedProducts = products.map(product => ({
+            ...product.toObject(),
+            price: convertINRToKES(product.price),
+            currency: "KES"
+        }))
+        response.status(200).json(convertedProducts)
     } catch(error) {
         response.status(500).json({message: error.message})
     }
@@ -22,7 +27,16 @@ const getProduct = async (request, response) => {
     try {
         const { id } = request.params
         const product = await Product.findById(id)
-        response.status(200).json(product)
+        if (product) {
+            const convertedProduct = {
+                ...product.toObject(),
+                price: convertINRToKES(product.price),
+                currency: "KES"
+            }
+            response.status(200).json(convertedProduct)
+        } else {
+            response.status(404).json({ message: "Product not found" })
+        }
     } catch (error) {
         response.status(500).json({ message: error.message })
     }

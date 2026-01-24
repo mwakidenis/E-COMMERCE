@@ -1,0 +1,22 @@
+<svg width="120" height="180" viewBox="0 0 120 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cylinder body -->
+  <rect x="30" y="40" width="60" height="120" rx="8" fill="#22c55e" stroke="#16a34a" stroke-width="2"/>
+  
+  <!-- Top handle -->
+  <ellipse cx="60" cy="30" rx="15" ry="8" fill="#16a34a" stroke="#15803d" stroke-width="2"/>
+  <rect x="45" y="30" width="30" height="10" fill="#16a34a"/>
+  
+  <!-- Label -->
+  <rect x="35" y="70" width="50" height="40" rx="4" fill="white" opacity="0.9"/>
+  <text x="60" y="90" text-anchor="middle" font-size="16" font-weight="bold" fill="#16a34a">6KG</text>
+  <text x="60" y="105" text-anchor="middle" font-size="10" fill="#16a34a">LPG</text>
+  
+  <!-- Valve indicator -->
+  <circle cx="60" cy="25" r="4" fill="#dc2626"/>
+  
+  <!-- Bottom base -->
+  <ellipse cx="60" cy="160" rx="25" ry="8" fill="#15803d" stroke="#166534" stroke-width="2"/>
+  
+  <!-- Shine effect -->
+  <rect x="35" y="50" width="8" height="80" rx="4" fill="white" opacity="0.2"/>
+</svg>

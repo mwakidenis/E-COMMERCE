@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green Wells SmartConnect | LPG Delivery in Kenya</title>
+    <meta name="description" content="Order LPG cylinders with Green Wells SmartConnect. Track deliveries in real-time, manage safety, and pay securely with M-Pesa." />
+    <meta name="author" content="Green Wells" />
+    <meta name="keywords" content="LPG, gas delivery, Kenya, M-Pesa, real-time tracking, green energy, cylinder delivery" />
+    
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#0F172A" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Green Wells" />
+    <link rel="manifest" href="/manifest.json" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/placeholder.svg" />
+    <link rel="apple-touch-icon" href="/images/icon-192x192.png" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Green Wells SmartConnect | LPG Delivery Platform" />
+    <meta property="og:description" content="Order LPG cylinders with Green Wells SmartConnect. Track deliveries in real-time, manage safety, and pay securely with M-Pesa." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://green-wells-connect.vercel.app" />
+    <meta property="og:image" content="https://green-wells-connect.vercel.app/placeholder.svg" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Green Wells SmartConnect | LPG Delivery" />
+    <meta name="twitter:description" content="Order LPG cylinders with real-time tracking and secure M-Pesa payments" />
+    <meta name="twitter:image" content="https://green-wells-connect.vercel.app/placeholder.svg" />
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q84R67LEG6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Q84R67LEG6');
+</script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      // Register service worker for PWA
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/service-worker.js')
+            .then((registration) => {
+              console.log('Service Worker registered:', registration);
+            })
+            .catch((error) => {
+              console.log('Service Worker registration failed:', error);
+            });
+        });
+      }
+    </script>
+  </body>
+</html>
